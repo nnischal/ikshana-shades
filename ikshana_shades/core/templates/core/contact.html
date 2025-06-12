@@ -1,0 +1,16 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<h2>We’d Love to Hear From You!</h2>
+<p>Have questions, feedback, or partnership ideas? Send us a message:</p>
+
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+</form>
+
+<p>Or contact us directly at: <strong>+977-9862230712</strong><br>Email: support@ikshanaa.com</p>
+{% endblock %}

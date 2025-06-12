@@ -1,0 +1,25 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<h2>Shop Our Bestsellers</h2>
+<div class="product-grid">
+    <div class="product-card">
+        <img src="{% static 'core/images/sunglass1.jpg' %}" alt="Classic Aviator">
+        <h4>Classic Aviator</h4>
+        <p>Rs. 2,499</p>
+        <button class="btn">Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="{% static 'core/images/sunglass2.jpg' %}" alt="Beige Round Frame">
+        <h4>Beige Round Frame</h4>
+        <p>Rs. 2,899</p>
+        <button class="btn">Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="{% static 'core/images/sunglass3.jpg' %}" alt="Retro Cat-Eye">
+        <h4>Retro Cat-Eye</h4>
+        <p>Rs. 3,199</p>
+        <button class="btn">Add to Cart</button>
+    </div>
+</div>
+{% endblock %}

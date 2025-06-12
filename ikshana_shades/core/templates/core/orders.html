@@ -1,0 +1,17 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<h2>My Orders</h2>
+<ul class="order-list">
+    <li>
+        <strong>Order #20051</strong><br>
+        Items: 3<br>
+        Status: <span style="color:green;">Delivered</span>
+    </li>
+    <li>
+        <strong>Order #20052</strong><br>
+        Items: 1<br>
+        Status: <span style="color:orange;">Processing</span>
+    </li>
+</ul>
+{% endblock %}

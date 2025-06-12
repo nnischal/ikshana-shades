@@ -1,0 +1,20 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<h2>Your Cart</h2>
+
+<div class="product-card">
+    <h4>Classic Aviator</h4>
+    <p>Rs. 2,499 × 1</p>
+    <a href="#">Remove</a>
+</div>
+
+<div class="product-card">
+    <h4>Beige Round Frame</h4>
+    <p>Rs. 2,899 × 2</p>
+    <a href="#">Remove</a>
+</div>
+
+<h3>Total: Rs. 8,297</h3>
+<a href="{% url 'checkout' %}" class="btn">Checkout</a>
+{% endblock %}
